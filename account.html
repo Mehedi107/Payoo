@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="flex justify-center items-center mt-10">
+    <!-- Phone mockup -->
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-1 p-4">
+          <!-- Balance -->
+          <div class="bg-primary text-accent-content rounded-md mt-8">
+            <div class="stat w-100%">
+              <div class="stat-title text-accent-content">Account balance</div>
+              <div class="stat-value balance">9400</div>
+              <div class="stat-actions"></div>
+            </div>
+          </div>
+          <!-- Deposit & Withdraw -->
+          <div class="form-control mt-6 flex gap-5 flex-row">
+            <button class="btn btn-md btn-error btn-withdrawal">
+              Withdrawal
+            </button>
+            <button class="btn btn-md btn-success btn-deposit">Deposit</button>
+          </div>
+          <!-- Add money form -->
+          <form class="card-body add-money-form">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input
+                type="number"
+                placeholder="Enter amount"
+                class="input input-bordered input-add-money"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Your Pin</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Pin"
+                class="input input-bordered input-add-money-pin"
+                required
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary btn-add-money">Add money</button>
+            </div>
+          </form>
+
+          <!-- Withdraw money form -->
+          <form class="card-body withdraw-money-form hidden">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input
+                type="number"
+                placeholder="Enter amount"
+                class="input input-bordered input-withdraw-money"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Your Pin</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Pin"
+                class="input input-bordered input-withdraw-money-pin"
+                required
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary btn-withdraw-money">
+                Withdraw money
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="/js/tailwind.config.js"></script>
+    <script defer src="js/account.js"></script>
+  </body>
+</html>

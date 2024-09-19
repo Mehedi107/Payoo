@@ -11,7 +11,7 @@ btnLogin.addEventListener('click', function (e) {
     inputMail.value === 'abc@gmail.com' &&
     Number(inputPassword.value) === 1234
   ) {
-    window.location.href = '/home.html';
+    window.location.href = '/account.html';
   } else {
     alert('Your email or password is incorrect');
   }
